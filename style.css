@@ -1,26 +1,48 @@
+body
+{
+    background-color: white;
+}
+
+h1
+{
+    font-weight: normal;
+}
+
 table
 {
-    border-spacing: 5px;
+    background-color: lightgrey;
+    border-spacing: 10px;
 }
 
 td
 {
-    width:165px;
+    width:300px;
+    color: grey;
 }
 
-input[type='radio']:checked::after
+span
 {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
+    color: darkred;
+}
+
+input[type=radio]:checked::after
+{
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 25px;
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #ffa500;
+    background-color: white;
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid white;
+    border: 5px solid darkorange;
+}
+
+#piros
+{
+    border: darkred ridge 1px;
 }
 
 #number
@@ -33,12 +55,26 @@ input[type='radio']:checked::after
     width: 176px;
 }
 
-hr
+div
 {
-    border-style: dotted;
+    border-top: dotted darkgray 1px;
+    border-bottom: dotted darkgray 1px;
+    padding: 15px;
+}
+
+img, p
+{
+    position: relative;
+    display: inline;
 }
 
 img
+{float: left;}
+
+#submit
 {
-    position: relative;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    height: 2em;
 }
